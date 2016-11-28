@@ -5,10 +5,7 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 
-//TODO
-//--Construct timing matrix from parsing notepad
-//gather current keypress matrix
-
+//prototype code for giving audio feedback in case of wrong note being played
 //findobjectoftype audioclip
 //code to lower volume if playing wrong note
 //float volume = 0.5f;
@@ -34,7 +31,7 @@ public class main_control : MonoBehaviour {
     // Use this for initialization
     void Start () {
         //piano roll dimensions determined by (length of midi in seconds)/(midi sample granularity in Hz)
-
+        //The piano roll matrix was hardcoded as a local string because of relative file path inconsistencies when trying to read from a text file after exporting to the HoloLens environment
         string lines = @"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
