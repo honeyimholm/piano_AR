@@ -9,8 +9,9 @@ A screengrab of the standalone is shown below
 # Process
 
 • This MIDI file is then fed into a MIDI to piano roll matrix converter which represents key press timing with 10Hz/88 key granularity.
+This step was run beforehand and the piano roll matrix was stored locally.
 
-• This timing matrix is used to create a falling visual representation of the notes projected onto a MIDI
+• This timing matrix is used together with a falling visual representation of the notes projected onto a MIDI
 keyboard that allows the user to both see which keys are active and prepare for incoming notes. 
 
 • The user input to the MIDI keyboard is relayed to the HoloLens simulation which then provides
@@ -20,7 +21,10 @@ been incorrectly pressed or missed.
 • The user is also given audio feedback by distorting the correct audio of the song proportionally to
 how many incorrect keys are being pressed or correct keys missed. 
 
-There are a lot of files that I should probably delete - key files to look at are:
+There are a lot of files (most of which I should probably delete) - key files to look at are:
+https://github.com/honeyimholm/piano_AR/blob/master/Assets/main_control.cs
+https://github.com/honeyimholm/piano_AR/blob/master/Assets/MouseLook.cs
+https://github.com/honeyimholm/piano_AR/blob/master/Assets/notes_fall.cs
 
 
 
