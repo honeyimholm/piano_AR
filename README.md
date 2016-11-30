@@ -2,6 +2,8 @@
 
 This project explores the intersection of education and Augmented Reality through the development of a piano tutoring HoloLens application which generates a visual falling note representation of the music. The falling notes are overlaid on a MIDI keyboard which allows the user to play along while recieving visual feedback from the simulation.
 
+A special thank you to Professor Austin S. Lee for providing creative and technical advising for this project.
+
 A screengrab of the standalone is shown below
 
 ![demo image](https://github.com/honeyimholm/piano_AR/blob/master/piano_AR_screenshot.png)
@@ -25,8 +27,6 @@ There are a lot of files (most of which I should probably delete) - key files to
 https://github.com/honeyimholm/piano_AR/blob/master/Assets/main_control.cs
 https://github.com/honeyimholm/piano_AR/blob/master/Assets/MouseLook.cs
 https://github.com/honeyimholm/piano_AR/blob/master/Assets/notes_fall.cs
-
-
 
 
 # Demo
